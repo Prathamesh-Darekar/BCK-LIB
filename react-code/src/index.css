@@ -1,0 +1,103 @@
+* {
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  background-color: aliceblue;
+}
+
+body > div {
+  height: 30px;
+  text-align: center;
+  line-height: 10px;
+  font-weight: 600;
+}
+
+p {
+  margin: 30px;
+  font-weight: 600;
+}
+
+#card-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.cards {
+  height: 285px;
+  width: 240px;
+  border: 3px solid rgb(99 102 241);
+  border-radius: 19px;
+  text-align: center;
+  font-weight: 700;
+  box-shadow: 2px 2px 4px rgb(158, 146, 146);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-image: linear-gradient(to right, #06b6d4, #3b82f6);
+}
+
+.image {
+  align-self: center;
+  border-radius: 19px;
+  margin-top: 8px;
+}
+
+#bca {
+  background: url("./assets/BCApic.jpg");
+  background-size: cover;
+  border-radius: 19px;
+}
+
+#bsc {
+  background: url("./assets/BSCpic.jpg");
+  background-size: cover;
+  border-radius: 19px;
+}
+
+#bcom {
+  background-image: url("./assets/BCompic.jpg");
+  background-size: cover;
+  border-radius: 19px;
+}
+
+#bba {
+  background-image: url("./assets/BBApic.jpg");
+  background-size: cover;
+  border-radius: 19px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-weight: 800 !important;
+  font-size: 22px;
+  background-image: linear-gradient(to right, #06b6d4, #3b82f6);
+}
+.cards:hover {
+  transition: all 0.3s;
+  background-color: rgba(212, 202, 202, 1);
+  box-shadow: 4px 4px 8px rgb(158, 146, 146);
+}
+.bck-navbar {
+  text-align: center;
+  width: 100%;
+}
+
+.bck-navbar > span {
+  font-weight: 700;
+  font-size: 30px;
+  background: linear-gradient(
+    to right,
+    #23966c,
+    #faaa54,
+    #e23b4a,
+    #db0768,
+    #360670
+  );
+  -webkit-background-clip: text;
+  font-family: cursive;
+  background-clip: text;
+  color: transparent;
+}
