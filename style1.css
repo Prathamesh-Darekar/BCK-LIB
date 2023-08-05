@@ -71,3 +71,22 @@ p{
     background-color: rgba(212, 202, 202, 1);
     box-shadow: 4px 4px 8px rgb(158, 146, 146);
 }
+
+/*Extra code for index3.html,index4.html and index5.html*/
+
+.box{
+    border:2px solid black;
+    height:77px;
+    width:587px;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 13px;
+    border-radius:20px;
+    background-color: rgba(70, 160, 187,0.2);
+    box-shadow: 2px 2px 4px rgb(158, 146, 146);
+}
+
+.box:hover{
+    background-color: rgba(70, 160, 187,0.5);
+    box-shadow: 4px 4px 8px rgb(158, 146, 146);
+}
