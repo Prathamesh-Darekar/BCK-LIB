@@ -43,6 +43,12 @@ p{
     box-shadow:1px 1px 3px rgb(131, 119, 119);
 }
 
+.image img{
+    width:100%;
+    height:100%;
+    border-radius:10%;
+}
+
 #bca{
     background:url("BCApic.jpg");
     background-size: cover;
