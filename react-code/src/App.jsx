@@ -28,7 +28,16 @@ function App() {
               />
               {/* course sems */}
               {year.years.map((sem, i) => (
-                <Route key={i}>
+                <Route
+                  key={i}
+                  path={`/${year.title
+                    .split(".")
+                    .join("")
+                    .toLowerCase()}/${sem.title
+                    .split(" ")
+                    .join("")
+                    .toLowerCase()}`}
+                >
                   <Route
                     path={`/${year.title
                       .split(".")
@@ -40,22 +49,29 @@ function App() {
                     element={<SemCard sem={year.sems} />}
                   />
                   {/* show each subjects */}
-                  {year.subs.map((sub, i) => (
-                    <Route
-                      key={i}
-                      path={`/${year.title
-                        .split(".")
-                        .join("")
-                        .toLowerCase()}/${sem.title
-                        .split(" ")
-                        .join("")
-                        .toLowerCase()}/${sub.title
-                        .split(".")
-                        .join("")
-                        .toLowerCase()}`}
-                      element={<SubCard sub={sub} />}
-                    />
-                  ))}
+                  {year.sems.map((sub) => {
+                    console.log(
+                      year.title.split(".").join("").toLowerCase(),
+                      sem.title.split(" ").join("").toLowerCase(),
+                      sub.title.split(" ").join("").toLowerCase()
+                    );
+                    return (
+                      <Route
+                        key={i}
+                        path={`/${year.title
+                          .split(".")
+                          .join("")
+                          .toLowerCase()}/${sem.title
+                          .split(" ")
+                          .join("")
+                          .toLowerCase()}/${sub.title
+                          .split(" ")
+                          .join("")
+                          .toLowerCase()}`}
+                        element={<SubCard sub={courses[i].subs} />}
+                      ></Route>
+                    );
+                  })}
                 </Route>
               ))}
             </Route>
