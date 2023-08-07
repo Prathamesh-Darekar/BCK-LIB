@@ -21,6 +21,7 @@ p {
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin-top: 60px;
+  gap: 100px;
 }
 
 .cards {
@@ -44,30 +45,6 @@ p {
   margin-top: 8px;
 }
 
-#bca {
-  background: url("./assets/BCApic.jpg");
-  background-size: cover;
-  border-radius: 19px;
-}
-
-#bsc {
-  background: url("./assets/BSCpic.jpg");
-  background-size: cover;
-  border-radius: 19px;
-}
-
-#bcom {
-  background-image: url("./assets/BCompic.jpg");
-  background-size: cover;
-  border-radius: 19px;
-}
-
-#bba {
-  background-image: url("./assets/BBApic.jpg");
-  background-size: cover;
-  border-radius: 19px;
-}
-
 .link {
   text-decoration: none;
   color: black;
@@ -83,6 +60,7 @@ p {
 .bck-navbar {
   text-align: center;
   width: 100%;
+  cursor: pointer;
 }
 
 .bck-navbar > span {
@@ -100,4 +78,78 @@ p {
   font-family: cursive;
   background-clip: text;
   color: transparent;
+}
+
+/* Year pages */
+
+.year-cards {
+  overflow: hidden;
+  height: 285px;
+  width: 240px;
+  border: 3px solid rgb(99 102 241);
+  border-radius: 19px;
+  text-align: center;
+  font-weight: 700;
+  box-shadow: 2px 2px 4px rgb(158, 146, 146);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-image: linear-gradient(to right, #06b6d4, #3b82f6);
+}
+
+.year-image {
+  align-self: center;
+  border-radius: 19px;
+  width: 220px;
+  overflow: hidden;
+  height: 220px !important;
+  margin-top: 8px;
+}
+
+.year-link {
+  text-decoration: none;
+  color: black;
+  font-weight: 800 !important;
+  font-size: 22px;
+  background-image: linear-gradient(to right, #06b6d4, #3b82f6);
+}
+
+/* sem pages */
+#sem-card-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  gap: 50px;
+}
+
+.sem-cards {
+  border: 3px solid rgb(99 102 241);
+  height: 77px;
+  width: 40%;
+  min-width: 200px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 13px;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, #06b6d4, #3b82f6);
+  box-shadow: 2px 2px 4px rgb(158, 146, 146);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.sem-cards:hover {
+  background-color: rgba(70, 160, 187, 0.5);
+  box-shadow: 4px 4px 8px rgb(158, 146, 146);
+}
+.sem-link {
+  text-decoration: none;
+  color: black;
+  font-weight: 800 !important;
+  font-size: 22px;
+  background-color: inherit;
+  background-image: linear-gradient(to right, #06b6d4, #3b82f6);
 }
