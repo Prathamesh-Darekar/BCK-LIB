@@ -6,6 +6,7 @@ import { Course } from "./pages/CourseCard.jsx"; // card which renders cources
 import {  allCoursesWD } from "./constants.jsx"; // allCourcesWithDetails
 import { SemCard } from "./pages/SemCard"; // card which renders sems
 import { SubCard } from "./pages/SubjectCard"; // card which renders subjects
+import Err from "./pages/Err";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="*" element={<Err />} />
           {allCoursesWD.map((course, i1) => (
             <Route path={`/${course.title.toLowerCase()}`} key={i1}>
               <Route

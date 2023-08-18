@@ -22,6 +22,7 @@ p {
   flex-wrap: wrap;
   margin-top: 60px;
   gap: 100px;
+  margin-bottom: 60px;
 }
 
 .cards {
@@ -96,6 +97,7 @@ p {
   flex-direction: column;
   gap: 20px;
   background-image: linear-gradient(to right, #06b6d4, #3b82f6);
+  margin-bottom: 60px;
 }
 
 .year-image {
@@ -122,6 +124,7 @@ p {
   flex-wrap: wrap;
   margin-top: 60px;
   gap: 50px;
+  margin-bottom: 60px;
 }
 
 .sem-cards {
@@ -152,4 +155,38 @@ p {
   font-size: 22px;
   background-color: inherit;
   background-image: linear-gradient(to right, #06b6d4, #3b82f6);
+}
+
+#err-page {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  justify-content: start;
+  padding-top: 150px;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  word-wrap: break-word;
+  line-height: 40px;
+}
+
+.err-span {
+  color: #0658d4;
+  cursor: pointer;
+}
+
+#err-page > h3 {
+  font-family: sans-serif;
+  font-size: 50px;
+}
+
+.route-specifier {
+  width: 100%;
+  padding-left: 65px;
+  padding-top: 10px;
+  font-style: italic;
+  text-align: start;
+}
+.route-specifier > span {
+  font-size: 15px;
 }
