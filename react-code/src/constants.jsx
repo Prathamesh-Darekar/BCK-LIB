@@ -4,111 +4,201 @@ import bsc from "./assets/BSCpic.jpg";
 import bba from "./assets/BBApic.jpg";
 import OneYR from "./assets/1styear.png";
 import TwoYR from "./assets/2ndyear.png";
-import TRYR from "./assets/3rdyear.png";
+import ThreeYR from "./assets/3rdyear.png";
 
 export const courses = [
+  { title: "BCA", img: bca },
+  { title: "BBA", img: bba },
+  { title: "BCom", img: bcom },
+  { title: "BSC", img: bsc },
+];
+export const allCoursesWD = [
   {
     title: "BCA",
-    id: "bca",
-    img: bca,
     years: [
-      { title: "1st Year", img: OneYR },
-      { title: "2nd Year", img: TwoYR },
-      { title: "3rd Year", img: TRYR },
-    ],
-    sems: [
-      { title: "1st SEM" },
-      { title: "2nd SEM" },
-      { title: "3rd SEM" },
-      { title: "4th SEM" },
-      { title: "5th SEM" },
-      { title: "6th SEM" },
-    ],
-    subs: [
-      { title: "SUB 1" },
-      { title: "SUB 2" },
-      { title: "SUB 3" },
-      { title: "SUB 4" },
-      { title: "SUB 5" },
-      { title: "SUB 6" },
-    ],
-  },
-  {
-    title: "BSC",
-    id: "bsc",
-    img: bsc,
-    years: [
-      { title: "1st Year", img: OneYR },
-      { title: "2nd Year", img: TwoYR },
-      { title: "3rd Year", img: TRYR },
-    ],
-    sems: [
-      { title: "1st SEM" },
-      { title: "2nd SEM" },
-      { title: "3rd SEM" },
-      { title: "4th SEM" },
-      { title: "5th SEM" },
-      { title: "6th SEM" },
-    ],
-    subs: [
-      { title: "SUB 1" },
-      { title: "SUB 2" },
-      { title: "SUB 3" },
-      { title: "SUB 4" },
-      { title: "SUB 5" },
-      { title: "SUB 6" },
-    ],
-  },
-  {
-    title: "B.Com",
-    id: "bcom",
-    img: bcom,
-    years: [
-      { title: "1st Year", img: OneYR },
-      { title: "2nd Year", img: TwoYR },
-      { title: "3rd Year", img: TRYR },
-    ],
-    sems: [
-      { title: "1st SEM" },
-      { title: "2nd SEM" },
-      { title: "3rd SEM" },
-      { title: "4th SEM" },
-      { title: "5th SEM" },
-      { title: "6th SEM" },
-    ],
-    subs: [
-      { title: "SUB 1" },
-      { title: "SUB 2" },
-      { title: "SUB 3" },
-      { title: "SUB 4" },
-      { title: "SUB 5" },
-      { title: "SUB 6" },
+      {
+        title: "1st Year",
+        img: OneYR,
+        sems: [
+          {
+            title: "1st Sem",
+            subs: ["sub1", "sub2", "sub3", "sub4", "sub5", "sub6"],
+          },
+          {
+            title: "2nd Sem",
+            subs: ["sub1", "sub2", "sub3", "sub4", "sub5", "sub6"],
+          },
+        ],
+      },
+      {
+        title: "2nd Year",
+        img: TwoYR,
+        sems: [
+          {
+            title: "3rd Sem",
+            subs: ["sub1", "sub2", "sub3", "sub4", "sub5", "sub6"],
+          },
+          {
+            title: "4th Sem",
+            subs: ["sub1", "sub2", "sub3", "sub4", "sub5", "sub6"],
+          },
+        ],
+      },
+      {
+        title: "3rd Year",
+        img: ThreeYR,
+        sems: [
+          {
+            title: "5th Sem",
+            subs: ["sub1", "sub2", "sub3", "sub4", "sub5", "sub6"],
+          },
+          {
+            title: "6th Sem",
+            subs: ["sub1", "sub2", "sub3", "sub4", "sub5", "sub6"],
+          },
+        ],
+      },
     ],
   },
   {
     title: "BBA",
-    id: "bba",
-    img: bba,
     years: [
-      { title: "1st Year", img: OneYR },
-      { title: "2nd Year", img: TwoYR },
-      { title: "3rd Year", img: TRYR },
+      {
+        title: "1st Year",
+        img: OneYR,
+        sems: [
+          {
+            title: "1st Sem",
+            subs: ["sub1", "sub2", "sub3", "sub4", "sub5", "sub6"],
+          },
+          {
+            title: "2nd Sem",
+            subs: ["sub1", "sub2", "sub3", "sub4", "sub5", "sub6"],
+          },
+        ],
+      },
+      {
+        title: "2nd Year",
+        img: TwoYR,
+        sems: [
+          {
+            title: "3rd Sem",
+            subs: ["sub1", "sub2", "sub3", "sub4", "sub5", "sub6"],
+          },
+          {
+            title: "4th Sem",
+            subs: ["sub1", "sub2", "sub3", "sub4", "sub5", "sub6"],
+          },
+        ],
+      },
+      {
+        title: "3rd Year",
+        img: ThreeYR,
+        sems: [
+          {
+            title: "5th Sem",
+            subs: ["sub1", "sub2", "sub3", "sub4", "sub5", "sub6"],
+          },
+          {
+            title: "6th Sem",
+            subs: ["sub1", "sub2", "sub3", "sub4", "sub5", "sub6"],
+          },
+        ],
+      },
     ],
-    sems: [
-      { title: "1st SEM" },
-      { title: "2nd SEM" },
-      { title: "3rd SEM" },
-      { title: "4th SEM" },
-      { title: "5th SEM" },
-      { title: "6th SEM" },
+  },
+  {
+    title: "BCom",
+    years: [
+      {
+        title: "1st Year",
+        img: OneYR,
+        sems: [
+          {
+            title: "1st Sem",
+            subs: ["sub1", "sub2", "sub3", "sub4", "sub5", "sub6"],
+          },
+          {
+            title: "2nd Sem",
+            subs: ["sub1", "sub2", "sub3", "sub4", "sub5", "sub6"],
+          },
+        ],
+      },
+      {
+        title: "2nd Year",
+        img: TwoYR,
+        sems: [
+          {
+            title: "3rd Sem",
+            subs: ["sub1", "sub2", "sub3", "sub4", "sub5", "sub6"],
+          },
+          {
+            title: "4th Sem",
+            subs: ["sub1", "sub2", "sub3", "sub4", "sub5", "sub6"],
+          },
+        ],
+      },
+      {
+        title: "3rd Year",
+        img: ThreeYR,
+        sems: [
+          {
+            title: "5th Sem",
+            subs: ["sub1", "sub2", "sub3", "sub4", "sub5", "sub6"],
+          },
+          {
+            title: "6th Sem",
+            subs: ["sub1", "sub2", "sub3", "sub4", "sub5", "sub6"],
+          },
+        ],
+      },
     ],
-    subs: [
-      { title: "SUB 1" },
-      { title: "SUB 2" },
-      { title: "SUB 3" },
-      { title: "SUB 4" },
-      { title: "SUB 5" },
-      { title: "SUB 6" },
+  },
+  {
+    title: "BSC",
+    years: [
+      {
+        title: "1st Year",
+        img: OneYR,
+        sems: [
+          {
+            title: "1st Sem",
+            subs: ["sub1", "sub2", "sub3", "sub4", "sub5", "sub6"],
+          },
+          {
+            title: "2nd Sem",
+            subs: ["sub1", "sub2", "sub3", "sub4", "sub5", "sub6"],
+          },
+        ],
+      },
+      {
+        title: "2nd Year",
+        img: TwoYR,
+        sems: [
+          {
+            title: "3rd Sem",
+            subs: ["sub1", "sub2", "sub3", "sub4", "sub5", "sub6"],
+          },
+          {
+            title: "4th Sem",
+            subs: ["sub1", "sub2", "sub3", "sub4", "sub5", "sub6"],
+          },
+        ],
+      },
+      {
+        title: "3rd Year",
+        img: ThreeYR,
+        sems: [
+          {
+            title: "5th Sem",
+            subs: ["sub1", "sub2", "sub3", "sub4", "sub5", "sub6"],
+          },
+          {
+            title: "6th Sem",
+            subs: ["sub1", "sub2", "sub3", "sub4", "sub5", "sub6"],
+          },
+        ],
+      },
     ],
   },
 ];

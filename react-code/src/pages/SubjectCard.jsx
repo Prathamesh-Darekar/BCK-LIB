@@ -5,7 +5,7 @@ export const SubCard = ({ sub }) => {
         {sub.map((el, i) => (
           <div className="sem-cards sub-card" key={i}>
             <a href="#" className="sem-link">
-              {el.title}
+              {el.slice(0, 1).toUpperCase() + el.slice(1)}
             </a>
           </div>
         ))}

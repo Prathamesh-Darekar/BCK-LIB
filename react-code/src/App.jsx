@@ -2,10 +2,10 @@ import Navbar from "./components/Navbar";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home.jsx";
-import { Course } from "./pages/CourseCard";
-import { courses } from "./constants.jsx";
-import { SemCard } from "./pages/SemCard";
-import { SubCard } from "./pages/SubjectCard";
+import { Course } from "./pages/CourseCard.jsx"; // card which renders cources
+import {  allCoursesWD } from "./constants.jsx"; // allCourcesWithDetails
+import { SemCard } from "./pages/SemCard"; // card which renders sems
+import { SubCard } from "./pages/SubjectCard"; // card which renders subjects
 
 function App() {
   return (
@@ -14,62 +14,40 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* show all cources availaible */}
-          {courses.map((year, i) => (
-            // each course
-            <Route
-              path={`/${year.title.split(".").join("").toLowerCase()}`}
-              key={i}
-            >
-              {/* course home page */}
+          {allCoursesWD.map((course, i1) => (
+            <Route path={`/${course.title.toLowerCase()}`} key={i1}>
               <Route
-                path={`/${year.title.split(".").join("").toLowerCase()}`}
-                element={<Course course={year.years} />}
+                path={`/${course.title.toLowerCase()}`}
+                element={<Course course={course.years} />}
               />
-              {/* course sems */}
-              {year.years.map((sem, i) => (
+              {course.years.map((el, i) => (
                 <Route
                   key={i}
-                  path={`/${year.title
-                    .split(".")
-                    .join("")
-                    .toLowerCase()}/${sem.title
+                  path={`/${course.title.toLowerCase()}/${el.title
                     .split(" ")
                     .join("")
                     .toLowerCase()}`}
                 >
                   <Route
-                    path={`/${year.title
-                      .split(".")
-                      .join("")
-                      .toLowerCase()}/${sem.title
+                    path={`/${course.title.toLowerCase()}/${el.title
                       .split(" ")
                       .join("")
                       .toLowerCase()}`}
-                    element={<SemCard sem={year.sems} />}
+                    element={<SemCard sem={el.sems} />}
                   />
-                  {/* show each subjects */}
-                  {year.sems.map((sub) => {
-                    console.log(
-                      year.title.split(".").join("").toLowerCase(),
-                      sem.title.split(" ").join("").toLowerCase(),
-                      sub.title.split(" ").join("").toLowerCase()
-                    );
+                  {el.sems.map((sem, j) => {
                     return (
                       <Route
-                        key={i}
-                        path={`/${year.title
-                          .split(".")
+                        key={j}
+                        path={`/${course.title.toLowerCase()}/${el.title
+                          .split(" ")
                           .join("")
                           .toLowerCase()}/${sem.title
                           .split(" ")
                           .join("")
-                          .toLowerCase()}/${sub.title
-                          .split(" ")
-                          .join("")
                           .toLowerCase()}`}
-                        element={<SubCard sub={courses[i].subs} />}
-                      ></Route>
+                        element={<SubCard sub={sem.subs} />}
+                      />
                     );
                   })}
                 </Route>
@@ -83,3 +61,17 @@ function App() {
 }
 
 export default App;
+/*
+{el.sems.map((sem, j) => {
+                    return (
+                      <Route
+                        key={j}
+                        path={`/bca/${el.title
+                          .split(" ")
+                          .join("")
+                          .toLowerCase()}/${sem.title.split(" ").join("").toLowerCase()}`}
+                        element={<SubCard subs={sem.subs} />}
+                      />
+                    );
+                  })}
+*/
