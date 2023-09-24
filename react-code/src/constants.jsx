@@ -5,7 +5,6 @@ import bba from "./assets/BBApic.jpg";
 import OneYR from "./assets/1styear.png";
 import TwoYR from "./assets/2ndyear.png";
 import ThreeYR from "./assets/3rdyear.png";
-import BCA_PDF from "/BCA_pdf/BCA_QP_JAVA_SEP_2S_2022.pdf";
 
 export const courses = [
   { title: "BCA", img: bca },
@@ -24,7 +23,15 @@ export const allCoursesWD = [
           {
             title: "1st Sem",
             subs: [
-              { title: "Java", links: [BCA_PDF] },
+              {
+                title: "Java",
+                links: [
+                  {
+                    link: "https://drive.google.com/file/d/1fXwpEdQMr-KlTcFJQagn-Tvia_LvaXu4/preview",
+                    title: "BCA_QP_JAVA_SEP_2S_2022.pdf"
+                  },
+                ],
+              },
               { title: "Maths", links: [] },
               { title: "FIT", links: [] },
               { title: "English", links: [] },
@@ -35,7 +42,16 @@ export const allCoursesWD = [
           {
             title: "2nd Sem",
             subs: [
-              { title: "sub1", links: [] },
+              { title: "Maths", links: [
+                {
+                  title: "II-SEM_BCA_2022_DISCRETE-MATHEMATICAL-STRUCTURES",
+                  link: "https://drive.google.com/file/d/1fXwpEdQMr-KlTcFJQagn-Tvia_LvaXu4/preview"
+                },
+                {
+                  title: "II-SEM_BCA_2022_DISCRETE-MATHEMATICAL-STRUCTURES",
+                  link: "https://drive.google.com/file/d/1fXwpEdQMr-KlTcFJQagn-Tvia_LvaXu4/preview"
+                }
+              ] },
               { title: "sub2", links: [] },
               { title: "sub3", links: [] },
               { title: "sub4", links: [] },
