@@ -13,7 +13,7 @@ const Navbar = () => {
         <span>BCK LIB</span>
       </div>
       <div className="route-specifier">
-        <span>{window.location.pathname == '/' ? "" : window.location.pathname}</span>
+        <span>{window.location.pathname == '/' ? "" : window.location.pathname.split("%20").join("_")}</span>
       </div>
     </>
   );

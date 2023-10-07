@@ -27,52 +27,83 @@ export const allCoursesWD = [
                 title: "Programming in C",
                 links: [
                   {
+                    info: "SEM QP",
                     title:"I-SEM_BCA_2022_PROGRAMMING-IN-C",
-                    link:""
+                    link:"https://drive.google.com/file/d/1P_MhyHEVfBhyaUaf14mMp6HDJR5BRiQF/preview"
                   },
                   {
-                    link: "https://drive.google.com/file/d/1gBERJap3qZpZeqNB4bxGOuScrOs_7col/preview",
-                    title: "I-SEM_BCA_2023_PROGRAMMING-IN-C"
+                    info: "SEM QP",
+                    title: "I-SEM_BCA_2023_PROGRAMMING-IN-C",
+                    link: "https://drive.google.com/file/d/1gBERJap3qZpZeqNB4bxGOuScrOs_7col/preview"
+                  },
+                  {
+                    info: "CBCS SEM QP",
+                    title: "I-SEM_BCA_2022_PROGRAMMING-IN-C",
+                    link: "https://drive.google.com/file/d/1liXAYvkmqH5CKkhVPPzu_MQkJTUTXweE/preview"
                   }
                 ],
               },
               { title: "Maths", links: [
                 {
+                  info: "SEM QP",
                   title:"I-SEM_BCA_2022_MATHEMATICAL-FOUNDATION",
-                  link:""
+                  link:"https://drive.google.com/file/d/1oMs61-2NNI1DNaDQ4r-RWBRJ_4WtcwxE/preview"
                 },
                 {
+                  info: "SEM QP",
                   title:"I-SEM_BCA_2023_MATHEMATICAL-FOUNDATION",
                   link:"https://drive.google.com/file/d/1gKDNxN1xbmczFSihiMi43zAN27Kp_cPt/preview"
                 }
               ] },
               { title: "FIT", links: [
                 {
+                  info: "SEM QP",
                   title:"I-SEM_BCA_2022_FUNDAMENTALS-OF-COMPUTER",
-                  link:""
+                  link:"https://drive.google.com/file/d/1qnvscraBMHsUTKFhBBZWhB6E6S4vp1LW/preview"
                 },
                 {
+                  info: "SEM QP",
                   title:"I-SEM_BCA_2023_FUNDAMENTALS-OF-COMPUTER",
                   link:"https://drive.google.com/file/d/1g8XkAS4V8VOLzRqUbQXwq2sX78TyPvo_/preview"
                 }
               ] },
               { title: "English", links: [
                 {
+                  info: "SEM QP",
                   title:"I-SEM_BCA_2022_GENERIC-ENGLISH",
-                  link:""
+                  link:"https://drive.google.com/file/d/1gF-_DZmJKAhqgbr6RnyWPMarpZQhCO0o/preview"
                 },
                 {
+                  info: "SEM QP",
                   title:"I-SEM_BCA_2023_GENERIC-ENGLISH",
                   link:"https://drive.google.com/file/d/1gKX_Qhn3g52n_oUfttFa5FkUqkSpA97O/preview"
                 }
               ] },
-              { title: "Hindi/Sanskrit", links: [] },
-              { title: "kannada", links: [
+              { title: "Hindi/Sanskrit", links: [
                 {
-                  title:"I-SEM_BCA_2022_KANNADA",
-                  link:""
+                  info: "SEM QP",
+                  title: "I-SEM_BCA_2022_HINDI",
+                  link: "https://drive.google.com/file/d/15acXKjnMiMkdCZ_gtQEmkR9DR1r-DgD-/preview"
                 },
                 {
+                  info: "SEM QP",
+                  title: "I-SEM_BCA_2023_HINDI",
+                  link: "https://drive.google.com/file/d/1J1ys2rAjvBDylp4fqnpFFco-Uh8uEKLd/preview"
+                },
+                {
+                  info: "SEM QP",
+                  title: "I-SEM_BCA_2023_SANSKRIT",
+                  LINK: "https://drive.google.com/file/d/1TpwyFdY10ahEYzSFLxlTsQ5_htTgnk7h/preview"
+                }
+              ] },
+              { title: "kannada", links: [
+                {
+                  info: "SEM QP",
+                  title:"I-SEM_BCA_2022_KANNADA",
+                  link:"https://drive.google.com/file/d/1NTWAGAe80xredQCb8LnophPBoKcSac_E/preview"
+                },
+                {
+                  info: "SEM QP",
                   title:"I-SEM_BCA_2023_KANNADA",
                   link:"https://drive.google.com/file/d/1gLiv2nYfiZXGcv5fUxiHLX4R6QWD3sID/preview"
                 }

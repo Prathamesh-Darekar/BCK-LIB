@@ -8,6 +8,7 @@ import { SemCard } from "./pages/SemCard"; // card which renders sems
 import { SubCard } from "./pages/SubjectCard"; // card which renders subjects
 import Err from "./pages/Err";
 import PDFs from "./components/PDFs";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -83,6 +84,7 @@ function App() {
             </Route>
           ))}
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );

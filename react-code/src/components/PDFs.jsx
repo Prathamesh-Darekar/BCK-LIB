@@ -3,11 +3,11 @@
 const PDFs = ({ links }) => {
 
   function modifyText(text) {
-    var txt = text.split(" ").slice(1);
+    var txt = text.split(" ").slice(3);
 
     txt[3] = "";
 
-    return txt.join(" ");
+    return txt.join(" ").split("-").join(" ");
   }
 
   console.log(links);
@@ -17,19 +17,24 @@ const PDFs = ({ links }) => {
       {links.length <= 0 && "No links"}
       {links.map((link, i) => (
         <div key={i} className="pdf-card">
+          <span className="pdf-info-text" >
+            {link?.info + " " + link.title.split("_")[2]}
+          </span>
+          <br />
+          <br />
           <span className="pdf-text">
             {modifyText(
               link.title.split("_").join(" ").split(".pdf").join("")
             )}
           </span>
           <div className="prev-btns">
-            <button data-bs-toggle="modal" data-bs-target="#videoModal" >Preview</button>
+            <button data-bs-toggle="modal" data-bs-target={`#videoModal${i}`} >Preview</button>
             <button>Download</button>
           </div>
 
           <div
             className="modal fade"
-            id="videoModal"
+            id={`videoModal${i}`}
             tabIndex="-1"
             aria-labelledby="videoModalLabel"
             aria-hidden="true"
@@ -52,8 +57,6 @@ const PDFs = ({ links }) => {
                   style={{width : "100%", height: "80vh"}}
                   allow="autoplay"
                 ></iframe>
-
-                
               </div>
             </div>
           </div>
